@@ -12,9 +12,10 @@ The objective of this project is to implement LSPE-based models and evaluate how
 
 ## Team
 
-- Name – Roll Number  
-- Name – Roll Number  
-
+- Sathwik – 23B0946
+- Dinesh - 23B1022
+- Rithvik - 23B0939
+- Sujay - 23B1022
 ---
 
 ## Project Goals
