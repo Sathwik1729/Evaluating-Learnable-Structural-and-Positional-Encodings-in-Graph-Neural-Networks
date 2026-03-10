@@ -1,60 +1,69 @@
-# Evaluating Learnable Structural and Positional Encodings in Graph Neural Networks
+# Evaluating Structural and Positional Encodings in Graph Neural Networks
 
-## Project Proposal
+## Overview
 
-Graph Neural Networks (GNNs) are widely used for learning from graph-structured data such as citation networks, social networks, and biological interaction networks. Most GNN models rely on message passing between neighboring nodes to compute node representations. However, these models often lack explicit mechanisms to encode structural or positional information about nodes within a graph.
+Graph Neural Networks (GNNs) are widely used for learning from graph-structured data such as citation networks, social networks, and molecular graphs. Most GNN models rely on message passing between neighboring nodes to compute node representations. While effective, these models often rely primarily on local connectivity and may not explicitly capture the structural role or position of nodes within the graph.
 
-In this project, we study the **Learnable Structural and Positional Encoding (LSPE)** framework for graph neural networks. LSPE augments node representations with learnable structural and positional embeddings that provide additional information about the role and position of nodes in the graph.
+This project investigates **Learnable Structural and Positional Encodings (LSPE)** for Graph Neural Networks. The LSPE framework augments node representations with additional learnable embeddings that encode structural and positional information in the graph. These embeddings are learned jointly with the model parameters and integrated into the message-passing process.
 
-Our goal is to implement LSPE-based models and evaluate how these encodings influence node classification performance compared to standard GNN architectures.
-
----
-
-## Team Members
-
-- Your Name (Roll Number)
-- Teammate Name (Roll Number)
+The objective of this project is to implement LSPE-based models and evaluate how structural and positional encodings influence node classification performance compared to standard GNN architectures.
 
 ---
 
-## Objectives
+## Team
 
-- Understand the limitations of standard message passing GNNs
-- Study the role of structural and positional information in graph learning
-- Implement baseline GNN models (GCN / GraphSAGE)
-- Implement the LSPE architecture
-- Evaluate the impact of positional encodings on node classification performance
+- Name – Roll Number  
+- Name – Roll Number  
+
+---
+
+## Project Goals
+
+The main goals of this project are:
+
+- Study the limitations of standard message-passing GNN architectures
+- Understand how structural and positional information can improve node representations
+- Implement baseline GNN models for comparison
+- Implement the LSPE framework
+- Evaluate the impact of positional encodings through controlled experiments
+
+---
+
+## Methodology
+
+The project will proceed in three stages:
+
+1. **Baseline Models**  
+   Implement standard GNN architectures such as Graph Convolutional Networks (GCN) to establish baseline performance.
+
+2. **LSPE Implementation**  
+   Implement GNN models augmented with learnable structural and positional encodings.
+
+3. **Experimental Evaluation**  
+   Compare baseline models and LSPE models in terms of node classification performance and analyze the effect of positional encodings.
 
 ---
 
 ## Datasets
 
-We plan to evaluate our models on standard citation network datasets commonly used in graph learning research:
+Experiments will be conducted on commonly used graph learning benchmarks:
 
 - **Cora**
 - **Citeseer**
 - **PubMed**
 
-These datasets are widely used benchmarks for node classification tasks.
+These datasets contain citation networks where nodes represent papers and edges represent citation relationships. The task is node classification.
 
 ---
 
-## Experiments
-
-The project will include the following experiments:
-
-1. Implementation of baseline GNN models
-2. Implementation of LSPE-based GNN models
-3. Comparison of node classification accuracy
-4. Ablation studies analyzing the effect of positional encodings
 
 ---
 
-## Main Reference
+## Reference
 
 Dwivedi, V. P. et al.  
-**Graph Neural Networks with Learnable Structural and Positional Representations**  
+*Graph Neural Networks with Learnable Structural and Positional Representations*  
 NeurIPS 2022  
 
-Paper link:  
+Paper:  
 https://arxiv.org/abs/2110.07875
