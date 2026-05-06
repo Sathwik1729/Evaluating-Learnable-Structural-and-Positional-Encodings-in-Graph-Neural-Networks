@@ -1,0 +1,13 @@
+torch>=2.0.0
+torch_geometric>=2.3.0
+torch_scatter
+torch_sparse
+torch_cluster
+numpy
+pandas
+matplotlib
+scipy
+networkx
+tqdm
+pyyaml
+scikit-learn

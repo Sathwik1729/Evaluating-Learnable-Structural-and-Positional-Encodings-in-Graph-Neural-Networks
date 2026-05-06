@@ -1,0 +1,10 @@
+dataset: citeseer
+model: gcn
+hidden_dim: 64
+num_layers: 2
+dropout: 0.5
+lr: 0.01
+weight_decay: 0.0005
+epochs: 200
+pe_dim: 8
+seed: 42
