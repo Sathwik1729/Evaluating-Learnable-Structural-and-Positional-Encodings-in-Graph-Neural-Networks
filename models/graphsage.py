@@ -1,10 +1,8 @@
 """
-TODO (Person 2): Implement GraphSAGE baseline.
+GraphSAGE baseline model.
 
-Use torch_geometric.nn.SAGEConv.
+Uses torch_geometric.nn.SAGEConv (mean aggregation by default).
 Interface is identical to GCN — forward(self, data) returns logits [N, out_channels].
-Copy the GCN structure and swap GCNConv → SAGEConv.
-SAGEConv(in_channels, out_channels) has the same signature.
 """
 import torch.nn as nn
 import torch.nn.functional as F
@@ -24,5 +22,10 @@ class GraphSAGE(nn.Module):
         self.convs.append(SAGEConv(hidden_channels, out_channels))
 
     def forward(self, data):
-        # TODO: implement — same pattern as GCN
-        raise NotImplementedError("Person 2: implement GraphSAGE.forward()")
+        x, edge_index = data.x, data.edge_index
+        for conv in self.convs[:-1]:
+            x = conv(x, edge_index)
+            x = F.relu(x)
+            x = F.dropout(x, p=self.dropout, training=self.training)
+        x = self.convs[-1](x, edge_index)
+        return x

@@ -1,10 +1,11 @@
-dataset: citeseer
+dataset: cora
 model: lspe
-hidden_dim: 256
+hidden_dim: 64
 num_layers: 2
 dropout: 0.7
 lr: 0.01
 weight_decay: 0.005
 epochs: 300
 pe_dim: 8
+pe_mode: random
 seed: 42

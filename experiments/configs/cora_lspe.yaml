@@ -2,9 +2,9 @@ dataset: cora
 model: lspe
 hidden_dim: 64
 num_layers: 2
-dropout: 0.5
-lr: 0.001
-weight_decay: 0.0005
-epochs: 200
+dropout: 0.7
+lr: 0.01
+weight_decay: 0.005
+epochs: 300
 pe_dim: 8
 seed: 42

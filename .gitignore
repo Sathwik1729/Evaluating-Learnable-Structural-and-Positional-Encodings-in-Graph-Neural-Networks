@@ -1,1 +1,7 @@
 __pycache__/\n*.pyc\ndata/\nexperiments/results/
+
+.venv/
+# Python cache files
+__pycache__/
+*.py[cod]
+data/

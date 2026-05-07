@@ -1,15 +1,13 @@
 from .gcn import GCN
-
-# TODO (Person 2): uncomment these as you implement each model
-# from .graphsage import GraphSAGE
-# from .gat import GAT
-# from .lspe import LSPE
+from .graphsage import GraphSAGE
+from .gat import GAT
+from .lspe import LSPE
 
 MODEL_REGISTRY = {
     'gcn': GCN,
-    # 'graphsage': GraphSAGE,   # uncomment when implemented
-    # 'gat': GAT,               # uncomment when implemented
-    # 'lspe': LSPE,             # uncomment when implemented
+    'graphsage': GraphSAGE,
+    'gat': GAT,
+    'lspe': LSPE,
 }
 
 
