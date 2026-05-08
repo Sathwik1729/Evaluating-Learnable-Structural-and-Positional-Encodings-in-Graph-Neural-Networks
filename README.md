@@ -15,7 +15,7 @@ The objective of this project is to implement LSPE-based models and evaluate how
 - Sathwik – 23B0946
 - Dinesh - 23B1022
 - Rithvik - 23B0939
-- Sujay - 23B1022
+- Sujay - 23B1059
 ---
 
 ## Project Goals
