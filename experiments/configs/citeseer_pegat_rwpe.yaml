@@ -1,0 +1,12 @@
+dataset: citeseer
+model: pegat
+hidden_dim: 128
+num_layers: 2
+dropout: 0.6
+heads: 4
+lr: 0.005
+weight_decay: 0.0005
+epochs: 400
+pe_dim: 8
+pe_mode: rw
+seed: 42
